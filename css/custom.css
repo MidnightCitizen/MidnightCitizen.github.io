@@ -96,3 +96,8 @@ footer {
 footer {
 	position:relative;
 }
+
+.modal-content iframe {
+	margin-top:20px;
+	margin-bottom:15px;
+}
