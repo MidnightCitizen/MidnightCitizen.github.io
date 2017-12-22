@@ -20,6 +20,7 @@ li {
   margin-left: 10%;
 }
 
-i.icon, i.icons {
+.keyboard{
+  color:red;
   font-size: 4em;
 }
