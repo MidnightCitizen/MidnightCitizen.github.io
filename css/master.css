@@ -1,5 +1,10 @@
 body {
   font-family: 'Work Sans', sans-serif;
+  background: url(/images/background-image-laptop.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 li {
@@ -18,6 +23,7 @@ a, a:visited {
   width:100%;
   overflow:hidden;
   background-color: black;
+  letter-spacing: 0.1em;
 }
 
 .navbarContent {
@@ -25,5 +31,5 @@ a, a:visited {
 }
 
 .keyboard{
-  color:red;
+  color:white;
 }
