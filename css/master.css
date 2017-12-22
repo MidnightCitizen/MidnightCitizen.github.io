@@ -1,3 +1,25 @@
-ul {
-  display:inline
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+li {
+  display:inline;
+}
+
+.navbar {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  overflow:hidden;
+  background-color: black;
+}
+
+.navbarContent {
+  color: white;
+  margin-left: 10%;
+}
+
+i.icon, i.icons {
+  font-size: 4em;
 }
