@@ -6,6 +6,14 @@ li {
   display:inline;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+  color: white;
+}
+
 .navbar {
   position:fixed;
   top:0;
@@ -16,7 +24,6 @@ li {
 }
 
 .navbarContent {
-  color: white;
   margin-left: 10%;
 }
 
