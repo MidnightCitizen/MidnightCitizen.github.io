@@ -6,12 +6,9 @@ li {
   display:inline;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
     color: white;
-}
-a:visited {
-  color: white;
 }
 
 .navbar {
