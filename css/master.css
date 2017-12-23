@@ -31,9 +31,6 @@ height: 100%;
   margin: auto;
 }
 
-
-
-
 .prompt {
   color : red;
 }
@@ -42,10 +39,11 @@ height: 100%;
   margin-top: -100px;
   top: 38%;
   left:30%;
-    width:745px;
-      height: 25px;
+  right: 30%;
+      width: 34.3%;
+      height: 2%;
     position: absolute;
-    padding: 5px 0;
+    padding: 5px 10px;
     font-size: 0.75em;
     text-align: center;
     text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
@@ -60,12 +58,13 @@ height: 100%;
 .terminal-body {
   z-index: 2;
     padding: 5px 10px;
-    height: 405px;
-    width:725px;
+    height: 40%;
+    width: 34.3%;
     margin-top: -100px;
     position: absolute;
     top: 41%;
     left:30%;
+    right: 30%;
     overflow-y: auto;
     word-break: normal;
     background-color: #000;
