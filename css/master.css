@@ -1,57 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
 body {
   font-family: 'Work Sans', sans-serif;
-  background: url(/images/background-image-laptop.jpeg) no-repeat center center fixed;
-  -webkit-background-size: cover;
+}
+
+
+
+.background-image {
+/* background: url(/images/Windows-10-NoZoom.jpg) no-repeat center center fixed; */
+background: url(/images/background-image-laptop.jpeg) no-repeat center center fixed;
+-webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+filter: blur(5px);
+  -webkit-filter: blur(5px);
+left: 0;
+position: fixed;
+right: 0;
+height: 100%;
 }
 
-li {
-  display:inline;
-}
-
-a, a:visited {
-    text-decoration: none;
-    color: white;
-}
-
-.navbar {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  overflow:hidden;
-  background-color: black;
-  letter-spacing: 0.1em;
-}
-
-.navbarContent {
-  margin-left: 10%;
-}
-
-.keyboard{
-  color:white;
-}
-
-/* .container {
-  color: white;
-  font-size: 2em;
-  text-align: center;
-  left: 0;
-  margin: auto;
-  margin-top: -100px;
+.container {
+  width: 300px;
+  height: 100px;
   position: absolute;
-  top: 50%;
-  width: 100%;
-} */
+  top:30%;
+  left:40%;
+  margin: auto;
+}
 
 
+
+
+.prompt {
+  color : red;
+}
 .terminal-title-bar {
+  z-index: 2;
   margin-top: -100px;
-  top: 47%;
+  top: 38%;
   left:30%;
-    width:524px;
+    width:745px;
       height: 25px;
     position: absolute;
     padding: 5px 0;
@@ -67,12 +58,13 @@ a, a:visited {
 }
 
 .terminal-body {
+  z-index: 2;
     padding: 5px 10px;
-    height: 255px;
-    width:505px;
+    height: 405px;
+    width:725px;
     margin-top: -100px;
     position: absolute;
-    top: 50%;
+    top: 41%;
     left:30%;
     overflow-y: auto;
     word-break: normal;
@@ -81,7 +73,20 @@ a, a:visited {
 
 }
 
-.typed-cursor {
+.blinking-cursor {
   opacity:1;
-  
-}
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation:  blink 0.7s infinite;
+  animation: blink-animation 0.7s steps(5, start) infinite;
+   -webkit-animation: blink-animation 0.7s steps(5, start) infinite;
+ }
+ @keyframes blink-animation {
+   to {
+     visibility: hidden;
+   }
+ }
+ @-webkit-keyframes blink-animation {
+   to {
+     visibility: hidden;
+   }
+ }
