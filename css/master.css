@@ -1,10 +1,10 @@
+* { margin: 0; padding: 0; }
+
 body, html {
   font-family: 'Work Sans', sans-serif;
   height: 100%;
-  margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-left: 0px
+  width: 100%;
+  background-image: url('/images/grey.png')
 }
 
 h1 {
@@ -15,7 +15,31 @@ h3 {
 font:  200 60px/84px Abril Fatface;
 }
 
+header .caption h1, h3 {
+color: #fff;
+}
 
+header .caption h1:hover, h3:hover {
+  animation-name: multicol;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes multicol {
+  0% {
+    text-shadow: 0 0 #fff;
+  }
+  100% {
+    text-shadow: 0 0 rgba(255, 255, 255, 50),
+    -30px -30px 0 rgba(255, 0, 0, 0.4), -20px
+    -20px 0 rgba(255, 165, 0, 0.4), -10px
+    -10px 0 rgba(255, 255, 0, 0.4), 10px 10px
+    0 rgba(238, 130, 238, 0.4), 20px 20px 0
+    rgba(75, 0, 130, 0.4), 30px 30px 0
+    rgba(2, 92, 2, 0.4);
+  }
+}
 
 .background-image {
 /* background: url(/images/Windows-10-NoZoom.jpg) no-repeat center center fixed; */
@@ -30,6 +54,12 @@ filter: blur(5px);
 -webkit-filter: blur(5px); */
 }
 
+footer {
+  background-image: url('/images/cartographer.png');
+  height:auto;
+  padding: 25px;
+
+}
 
 .caption {
   position: absolute;
@@ -40,9 +70,9 @@ filter: blur(5px);
   color: white;
 }
 .container {
-  height:600px;
-  margin : auto 125px auto 125px;
-  background-color:white;
+  height:auto;
+  /* min-height:100%; */
+  margin : 50px 125px 50px 125px;
   font-size:24px;
 }
 
@@ -71,10 +101,6 @@ filter: blur(5px);
     display: table;
     clear: both;
 }
-
-/* .firstPane, .secondPane, .thirdPane, .fourPane, .fifthPane {
-  height: 400px;
-} */
 
 .center {
   text-align: center;
