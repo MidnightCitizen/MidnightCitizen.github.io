@@ -56,8 +56,13 @@ filter: blur(5px);
 
 footer {
   background-image: url('/images/cartographer.png');
-  height:auto;
-  padding: 25px;
+    position: absolute;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   padding: 1rem;
+     background-color: rgba(255, 255, 255, 0.5);
+   text-align: center;
 
 }
 
