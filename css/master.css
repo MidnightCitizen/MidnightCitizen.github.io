@@ -1,25 +1,35 @@
-* { margin: 0; padding: 0; }
-
 body, html {
+  margin: 0;
+  padding: 0;
   font-family: 'Work Sans', sans-serif;
   height: 100%;
   width: 100%;
   background-image: url('/images/grey.png')
 }
 
+/*  START HEADLINE  */
+.headline {
+  position: absolute;
+  left:0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
 h1 {
-  font:400 87px/84px Abril Fatface;
+  font: 400 87px/84px Abril Fatface;
 }
 
 h3 {
-font:  200 60px/84px Abril Fatface;
+font: 200 60px/84px Abril Fatface;
 }
 
-header .caption h1, h3 {
+header .headline h1, h3 {
 color: #fff;
 }
 
-header .caption h1:hover, h3:hover {
+header .headline h1:hover, h3:hover {
   animation-name: multicol;
   animation-duration: 1s;
   animation-direction: alternate;
@@ -41,46 +51,21 @@ header .caption h1:hover, h3:hover {
   }
 }
 
+/*  END HEADLINE  */
+
 .background-image {
-/* background: url(/images/Windows-10-NoZoom.jpg) no-repeat center center fixed; */
 background-image: url('/images/background-image-laptop.jpeg');
 height: 100%;
-background-attachment: fixed;
 background-position: center;
-background-repeat: no-repeat;
+background-attachment: fixed;
 background-size: cover;
-/* z-index: 1;
-filter: blur(5px);
--webkit-filter: blur(5px); */
 }
 
-footer {
-  background-image: url('/images/cartographer.png');
-    position: absolute;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   padding: 1rem;
-     background-color: rgba(255, 255, 255, 0.5);
-   text-align: center;
-
-}
-
-.caption {
-  position: absolute;
-  left:0;
-  top: 30%;
-  width: 100%;
-  text-align: center;
-  color: white;
-}
 .container {
   height:auto;
-  /* min-height:100%; */
-  margin : 50px 125px 50px 125px;
-  font-size:24px;
+  margin : 50px 70px 50px 70px;
+  font-size:1.4em;
 }
-
 
 .column {
   margin-top: 40px;
@@ -97,9 +82,7 @@ footer {
   font-size: 0.8em;
 }
 
-.header {
-  margin-top: -4px;
-}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -110,74 +93,30 @@ footer {
 .center {
   text-align: center;
 }
-/* TERMINAL THING */
-.prompt {
-  color : red;
-}
 
-.terminal {
-  font-size: 18px;
-}
-.terminal-title-bar {
-  /* z-index: 2;
-  margin-top: -100px;
-  top: 38%;
-  left:30%;
-  right: 30%;
-      width: 34.3%;
-      height: 2%;
-    position: absolute;
-    padding: 5px 10px; */
 
-    /* position: absolute;
-      left:60%;
-    width: 30%;
-    font-size: 0.75em;
-    text-align: center;
-    text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
-    background-color: #f8f8f8;
-    background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
-    background-image: -moz-linear-gradient(top, #e8e8e8, #bcbbbc);
-    background-image: linear-gradient(top, #e8e8e8, #bcbbbc);
-    box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
-    border-bottom: #6a6a6a 1px solid; */
-}
-
-.terminal-body {
-  /* z-index: 2;
-    padding: 5px 10px;
-    height: 40%;
-    width: 34.3%;
-    margin-top: -100px;
-    position: absolute;
-    top: 41%;
-    left:30%;
-    right: 30%; */
-    /* position: absolute;
-      left:30%;
-    text-align: left;
-    width : 30%;
-    overflow-y: auto;
-    word-break: normal;
-    background-color: #000;
-    color: #fff; */
+footer {
+  font-size: 4em;
+  padding-top: 60px;
+  background-color: #252a30;
+  min-height: 140px;
+  text-align: center;
 
 }
 
-.blinking-cursor {
-  opacity:1;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation:  blink 0.7s infinite;
-  animation: blink-animation 0.7s steps(5, start) infinite;
-   -webkit-animation: blink-animation 0.7s steps(5, start) infinite;
- }
- @keyframes blink-animation {
-   to {
-     visibility: hidden;
-   }
- }
- @-webkit-keyframes blink-animation {
-   to {
-     visibility: hidden;
-   }
- }
+.accounts-links {
+  text-decoration-style: none;
+  color: #fff;
+  padding:20px;
+}
+
+.arrow-up {
+    font-size: 0.9em;
+    text-decoration-style: none;
+    color: #fff;
+    padding-top: 60px;
+    padding-right: 30px;
+    0px;
+    float:right;
+    background-color: #252a30;
+}
