@@ -31,7 +31,7 @@ color: #fff;
 
 header .headline h1:hover, h3:hover {
   animation-name: multicol;
-  animation-duration: 0.1s;
+  animation-duration: 1s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
