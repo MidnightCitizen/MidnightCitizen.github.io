@@ -10,12 +10,10 @@ body, html {
 /*  START HEADLINE  */
 .headline {
   position: absolute;
-  left:0;
   top: 30%;
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 10vw;
 }
 
 h1 {
