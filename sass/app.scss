@@ -1,6 +1,6 @@
 // MASTER
 @import "variables";
-@import "0-plugins/plugins-dir";
-@import "1-base/base-dir";
-@import "2-layouts/layouts-dir";
-@import "3-modules/modules-dir";
+@import "0-vendors/_0_plugins-dir";
+@import "1-base/_0_base-dir";
+@import "2-layouts/_0_layouts-dir";
+@import "3-partials/_0_partials-dir";

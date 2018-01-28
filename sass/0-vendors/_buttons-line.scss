@@ -1,12 +1,5 @@
-$thick : 3px;
-$pad : 0.7em;
-$extra : calc(#{$pad} * 1.2);
-$color : black;
-$f-family: 'La Belle Aurore', cursive;
-
-
 a#about, a#contact {
-  font-family: $f-family;
+  font-family: $font-family-2;
   cursor: pointer;
   color: black;
   // transform: translate3d(-50%,-50%,0);
@@ -19,7 +12,7 @@ a#about, a#contact {
 
   .text {
     // padding: 0 0.3em;
-    font-family: $f-family;
+    font-family: $font-family-2;
     transform: translate3d(0,$pad,0);
     // display: block;
     transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
