@@ -1,25 +1,25 @@
 .headline
-  width: 500px
-
-  position: relative
-  left: 50%
-  top: 0%
-  margin-left: -255px
-  margin-top: 120px
+  display: grid
+  grid-template-rows: 1fr
   cursor: default
-  z-index: 1
+  border: solid 4px red
+  background-color: lightgreen
 
-  border: solid 1px white
 
+.title-job, .bracket
+    display: flex
+    align-items: center
+    justify-content: center
 
 
 .title-job
-    width: 440px
-    font-size: 50px
+    font-size: 7vmin
+    margin: 0
 
-    position: relative
-    left: 50%
 
-    margin-top: -20px
-    margin-bottom: -20px
-    margin-left: -230px
+.bracket
+  font-family: $font-family-2
+
+
+h1
+  font-family: $font-family-1
