@@ -12,14 +12,18 @@
 
       <link rel="stylesheet" href="/css/app.css">
 
-      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 
   </head>
 
-  <body>
+  <body onload="myFunction()">
+    <div id="particles-js"></div>
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
 
     <div class="flex-container">
-        <div id="particles-js"></div>
+
 
         <div id="hamburger">
           <a href="#">  </a>
@@ -67,7 +71,8 @@
   </div> <!-- END .flex-container -->
 
 
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
       <script src="js/app.js"></script>
-
+</div>
   </body>
 </html>
